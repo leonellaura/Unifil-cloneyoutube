@@ -4,47 +4,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html,body{
+    font-size: 1rem;
+}
+
 .cabeçalho {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
-    zoom: 150%;
+    border-bottom: 1px solid grey;
+    height: 10vh;
+    background-color: blanchedalmond;
 }
-.cabeçalho-início {
-    display: flex;
-    gap: 16px;
-    align-items: center;
-}
-.cabeçalho-centro {
-    display: flex;
-    gap: 8px;
-    background-color: bisque;
+    .cabeçalho-início {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    .cabeçalho-centro {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .cabeçalho-final {
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
 
-}
-.cabeçalho-final {
-    display: flex;
-    background-color: white;
-    gap: 10px;
 }
 .search {
     display: flex;
 }
-.search-input {
-    border: 1px solid gray;
-    outline: none;
-    height: 32px;
-    width: 300px;
-    border-radius: 16px 0 0 16px;
-}
-.search-button {
-    width:50px;
-    height: 32px;
-    border-radius:0 16px 16px 0;
+    .search-input {
+        border: 1px solid gray;
+        outline: none;
+        height: 2rem;
+        width: 20rem;
+        border-radius: 1rem 0 0 1rem;
+        padding: 0 1rem;
+    }
+    .search-button {
+        width:4rem;
+        height: 2rem;
+        border-radius:0 16px 16px 0;
 
 }
 .microfone {
-    height: 32px;
-    width: 32px;
+    height: 2rem;
+    width: 2rem;
     border: 1px solid gray;
     border-radius: 50%;
 }
@@ -52,27 +59,55 @@
     display: flex;
     align-items: center;
 }
-.logotipo-ícone {
-    color: red;
+    .logotipo-ícone {
+        color: red;
+    }
+    .logotipo-nome{
+        font-weight: bold;
+    }
+    .logotipo-nome:hover{
+        background-color: beige;
+    }
+    .logotipo-país {
+        font-size: 0.5rem;
+        color: rgb(71, 71, 71);
+    }
+    .logotipo-video{
+        border-radius: 50%;
+        background-color:rgb(255, 255, 255);
+        width: 2rem;
+        height: 2rem;
+        color: blue;
+    }
+    .logotipo-video:hover{
+        background-color: rgb(67,67,67);
+        color: white;
+    }
+
+/* cs do main */
+
+.principal{
+    background-color: rgb(185, 136, 136);
+    height: 90vh;
+    display:flex
 }
-.logotipo-nome{
-    font-weight: bold;
+
+.principal-sidebar{
+    background-color: rgb(183, 161, 128);
+    width: 20vw;
+
+    overflow-y: auto;
 }
-.logotipo-nome:hover{
-    background-color: beige;
+.principal-video{
+    background-color: rgb(189, 189, 112);
+    width: 65vw;
 }
-.logotipo-país {
-    font-size: 9px;
-    color: rgb(71, 71, 71);
+.principal-recomendados{
+    background-color: rgb(152, 201, 184);
+    width: 25vw;
 }
-.logotipo-video{
-    border-radius: 50%;
-    background-color:rgb(255, 255, 255);
-    width: 30px;
-    height: 30px;
-    color: blue;
-}
-.logotipo-video:hover{
-    background-color: rgb(67,67,67);
-    color: white;
+
+.sidebar-inicio, .sidebar-centro, .sidebar-final{
+    display: flex;
+    flex-direction: column;
 }
